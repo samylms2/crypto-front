@@ -3,3 +3,5 @@ https://medium.com/@oxygenna/real-time-cryptocurrency-visualisations-using-react
 LogRocket  : to stop try debugging 
 
 https://blog.logrocket.com/websockets-tutorial-how-to-go-real-time-with-node-and-react-8e4693fbf843/
+
+https://github.com/RandulaKoralage/etherium-price-chart
