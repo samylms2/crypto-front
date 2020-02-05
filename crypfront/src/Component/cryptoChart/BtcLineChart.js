@@ -1,6 +1,6 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-import Chart from "./chart";
+import Chart from "../chart";
 
 const styles = theme => ({
   "chart-container": {

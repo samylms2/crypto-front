@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './dashboard.css';
 import axios from 'axios';
-import LineChart from './LineChart';
+import BtcLineChart from '../cryptoChart/BtcLineChart';
+import EthLineChart from '../cryptoChart/EthLineChart';
 
 
 class Dashboard extends Component {
@@ -11,7 +12,7 @@ class Dashboard extends Component {
 
     this.state = {
       cryptos: [],
-      showLineChart: false
+      showLineChart: [false, false]
     }
   }
 
@@ -39,11 +40,13 @@ class Dashboard extends Component {
           <div id="crypto-container">
             <span className="left">{key}</span>
             <span className="right">{this.state.cryptos[key].EUR}€</span>
+    
           </div>
         ))}
-        <button onClick={this._showLineChart.bind(null, true)}>show</button>
-        <button onClick={this._showLineChart.bind(null, false)}>hide</button>
-        {this.state.showLineChart && (<LineChart />)}
+        
+        {this.state.showLineChart && (<BtcLineChart />)}
+        {this.state.showLineChart && (<EthLineChart />)}
+
 
 
       </div>

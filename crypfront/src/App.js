@@ -1,6 +1,6 @@
 import React from 'react';
  import './App.css';
- import Dashboard from './Component/Dashboard';
+ import Dashboard from './Component/dashbord/Dashboard';
 
 function App() {
   return (
